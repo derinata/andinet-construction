@@ -25,87 +25,87 @@ const services = [
 
 export default function AndinetConstructionWebsite() {
   return (
-    <main className="min-h-screen bg-stone-50 text-neutral-950">
-      <header className="fixed left-0 right-0 top-0 z-50 border-b border-black/10 bg-stone-50/90 backdrop-blur">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
-          <div className="font-serif text-xl tracking-wide">ANDINET</div>
-          <div className="hidden gap-8 text-sm uppercase tracking-[0.2em] md:flex">
-            <a href="#services" className="hover:opacity-60">Services</a>
-            <a href="#story" className="hover:opacity-60">Story</a>
-            <a href="#contact" className="hover:opacity-60">Contact</a>
+    <main style={{ background: "#fafaf9", color: "#171717", fontFamily: "Arial, sans-serif" }}>
+      <header style={{ position: "sticky", top: 0, zIndex: 50, background: "white", borderBottom: "1px solid #ddd" }}>
+        <nav style={{ maxWidth: "1100px", margin: "0 auto", padding: "18px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "20px", flexWrap: "wrap" }}>
+          <div style={{ fontSize: "22px", letterSpacing: "2px", fontWeight: "600" }}>ANDINET</div>
+
+          <div style={{ display: "flex", gap: "28px", fontSize: "14px", textTransform: "uppercase" }}>
+            <a href="#services">Services</a>
+            <a href="#story">Story</a>
+            <a href="#contact">Contact</a>
           </div>
-          <button className="rounded-full bg-black px-5 text-white hover:bg-neutral-800">Get started</button>
+
+          <a href="#contact" style={{ background: "black", color: "white", padding: "10px 18px", borderRadius: "999px", textDecoration: "none" }}>
+            Get started
+          </a>
         </nav>
       </header>
 
-      <section className="mx-auto grid max-w-7xl gap-10 px-5 pb-20 pt-32 md:grid-cols-[1.05fr_0.95fr] md:items-center">
-        <motion.div initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
-          <p className="mb-5 text-sm uppercase tracking-[0.3em] text-neutral-500">Construction Technology Bridge</p>
-          <h1 className="font-serif text-6xl leading-[0.9] tracking-tight md:text-8xl">
+      <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "80px 20px 50px", display: "grid", gap: "35px" }}>
+        <motion.div initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} style={{ textAlign: "center" }}>
+          <p style={{ letterSpacing: "3px", color: "#666", textTransform: "uppercase" }}>Construction Technology Bridge</p>
+          <h1 style={{ fontSize: "clamp(42px, 8vw, 86px)", lineHeight: "0.95", margin: "20px 0" }}>
             Innovating Addis Ababa
           </h1>
-          <p className="mt-7 max-w-xl text-lg leading-8 text-neutral-700">
+          <p style={{ maxWidth: "760px", margin: "0 auto", fontSize: "20px", lineHeight: "1.7", color: "#555" }}>
             Connecting global construction technologies with infrastructure projects in Ethiopia and East Africa.
           </p>
-          <p className="mt-5 max-w-xl leading-7 text-neutral-700">
+          <p style={{ maxWidth: "760px", margin: "18px auto 0", fontSize: "18px", lineHeight: "1.7", color: "#555" }}>
             Through partnerships with global innovators, Andinet bridges funding, technology, and on-site expertise to deliver resilient infrastructure across East Africa.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <button className="rounded-full bg-black px-7 py-6 text-white hover:bg-neutral-800">
-              Start a partnership <ArrowRight className="ml-2 h-4 w-4" />
-            </button>
-            <button variant="outline" className="rounded-full border-black px-7 py-6">
+
+          <div style={{ marginTop: "28px", display: "flex", justifyContent: "center", gap: "12px", flexWrap: "wrap" }}>
+            <a href="#contact" style={{ background: "black", color: "white", padding: "14px 22px", borderRadius: "999px", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "8px" }}>
+              Start a partnership <ArrowRight size={18} />
+            </a>
+            <a href="#story" style={{ border: "1px solid black", color: "black", padding: "14px 22px", borderRadius: "999px", textDecoration: "none" }}>
               Learn more
-            </button>
+            </a>
           </div>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="relative">
-          <div className="absolute -right-4 -top-6 hidden rounded-full bg-black px-5 py-10 text-center text-xs uppercase tracking-[0.45em] text-white md:block [writing-mode:vertical-rl]">
-            Learn More
-          </div>
-          <img
-            src="https://images.unsplash.com/photo-1600240644455-3edc55c375fe?auto=format&fit=crop&w=1200&q=80"
-            alt="Modern bridge infrastructure"
-            className="h-[520px] w-full rounded-t-full object-cover shadow-2xl"
-          />
-        </motion.div>
+        <img
+          src="https://images.unsplash.com/photo-1600240644455-3edc55c375fe?auto=format&fit=crop&w=1200&q=80"
+          alt="Modern bridge infrastructure"
+          style={{ width: "100%", maxHeight: "520px", objectFit: "cover", borderRadius: "28px", boxShadow: "0 20px 50px rgba(0,0,0,0.18)" }}
+        />
       </section>
 
-      <section id="story" className="bg-sky-500 px-5 py-20 text-black">
-        <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[0.8fr_1.2fr] md:items-center">
-          <div>
-            <h2 className="font-serif text-5xl uppercase md:text-7xl">Our Story</h2>
-            <p className="mt-6 max-w-xl text-lg leading-8">
+      <section id="story" style={{ background: "#0ea5e9", color: "black", padding: "70px 20px" }}>
+        <div style={{ maxWidth: "1100px", margin: "0 auto", display: "grid", gap: "30px" }}>
+          <div style={{ textAlign: "center" }}>
+            <h2 style={{ fontSize: "clamp(36px, 6vw, 70px)", margin: 0 }}>Our Story</h2>
+            <p style={{ maxWidth: "850px", margin: "20px auto", fontSize: "19px", lineHeight: "1.7" }}>
               Eng. Andinet Assemanew builds bridges between international vendors and Ethiopian projects, guiding clients from concept through commissioning with clarity, integrity, and local insight.
             </p>
-            <button className="mt-8 rounded-full bg-black px-8 text-white hover:bg-neutral-800">Our team</button>
           </div>
           <img
             src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80"
             alt="Bridge project landscape"
-            className="h-[420px] w-full rounded-3xl object-cover shadow-xl"
+            style={{ width: "100%", maxHeight: "480px", objectFit: "cover", borderRadius: "28px" }}
           />
         </div>
       </section>
 
-      <section id="services" className="mx-auto max-w-7xl px-5 py-24">
-        <div className="mb-12 flex items-end justify-between gap-6">
-          <h2 className="font-serif text-5xl uppercase md:text-7xl">Our Services</h2>
-          <p className="hidden max-w-sm text-neutral-600 md:block">
+      <section id="services" style={{ maxWidth: "1100px", margin: "0 auto", padding: "80px 20px" }}>
+        <div style={{ textAlign: "center", marginBottom: "40px" }}>
+          <h2 style={{ fontSize: "clamp(36px, 6vw, 70px)", margin: 0 }}>Our Services</h2>
+          <p style={{ color: "#555", fontSize: "18px" }}>
             Practical advisory for companies, governments, contractors, and infrastructure investors.
           </p>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "24px" }}>
           {services.map((service) => {
             const Icon = service.icon;
             return (
-              <div key={service.title} className="overflow-hidden rounded-3xl border-black/10 bg-white shadow-sm">
-                <img src={service.image} alt={service.title} className="h-56 w-full object-cover" />
-                <div className="p-6">
-                  <Icon className="mb-5 h-8 w-8" />
-                  <h3 className="font-serif text-3xl uppercase">{service.title}</h3>
-                  <p className="mt-4 leading-7 text-neutral-700">{service.text}</p>
+              <div key={service.title} style={{ background: "white", borderRadius: "26px", overflow: "hidden", boxShadow: "0 12px 30px rgba(0,0,0,0.08)" }}>
+                <img src={service.image} alt={service.title} style={{ width: "100%", height: "220px", objectFit: "cover" }} />
+                <div style={{ padding: "24px" }}>
+                  <Icon size={34} />
+                  <h3 style={{ fontSize: "24px", marginTop: "18px" }}>{service.title}</h3>
+                  <p style={{ color: "#555", lineHeight: "1.7" }}>{service.text}</p>
                 </div>
               </div>
             );
@@ -113,43 +113,39 @@ export default function AndinetConstructionWebsite() {
         </div>
       </section>
 
-      <section className="bg-black px-5 py-20 text-white">
-        <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-3">
-          <div>
-            <p className="text-5xl font-semibold">01</p>
-            <p className="mt-3 text-neutral-300">Market entry and representation</p>
-          </div>
-          <div>
-            <p className="text-5xl font-semibold">02</p>
-            <p className="mt-3 text-neutral-300">Technology evaluation and training</p>
-          </div>
-          <div>
-            <p className="text-5xl font-semibold">03</p>
-            <p className="mt-3 text-neutral-300">Project partnerships and local support</p>
-          </div>
+      <section style={{ background: "black", color: "white", padding: "60px 20px" }}>
+        <div style={{ maxWidth: "1100px", margin: "0 auto", display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "30px", textAlign: "center" }}>
+          <div><h3>01</h3><p>Market entry and representation</p></div>
+          <div><h3>02</h3><p>Technology evaluation and training</p></div>
+          <div><h3>03</h3><p>Project partnerships and local support</p></div>
         </div>
       </section>
 
-      <section id="contact" className="mx-auto max-w-4xl px-5 py-24 text-center">
-        <p className="font-serif text-5xl uppercase md:text-7xl">Trusted Partner.</p>
-        <p className="mt-6 text-neutral-600">Reach us for collaborations, project opportunities, or to discuss how construction technology can unlock faster, safer, and more cost-efficient infrastructure across East Africa.</p>
-        <div className="mt-10 grid gap-4 text-left md:grid-cols-3">
-          <div className="rounded-2xl border bg-white p-5"><Mail className="mb-3 h-5 w-5" />info@andinetbridge.com</div>
-          <div className="rounded-2xl border bg-white p-5"><Phone className="mb-3 h-5 w-5" />+358 00 000 0000</div>
-          <div className="rounded-2xl border bg-white p-5"><MapPin className="mb-3 h-5 w-5" />Addis Ababa / Helsinki</div>
+      <section id="contact" style={{ maxWidth: "900px", margin: "0 auto", padding: "80px 20px", textAlign: "center" }}>
+        <h2 style={{ fontSize: "clamp(36px, 6vw, 70px)", margin: 0 }}>Trusted Partner.</h2>
+        <p style={{ color: "#555", fontSize: "18px", lineHeight: "1.7" }}>
+          Reach us for collaborations, project opportunities, or to discuss how construction technology can unlock faster, safer, and more cost-efficient infrastructure across East Africa.
+        </p>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "16px", marginTop: "30px", textAlign: "left" }}>
+          <div style={{ background: "white", padding: "18px", borderRadius: "18px", border: "1px solid #ddd" }}><Mail /> andassamenew@yahoo.com</div>
+          <div style={{ background: "white", padding: "18px", borderRadius: "18px", border: "1px solid #ddd" }}><Phone /> +251 911 690 847</div>
+          <div style={{ background: "white", padding: "18px", borderRadius: "18px", border: "1px solid #ddd" }}><MapPin /> Addis Ababa / Helsinki</div>
         </div>
-        <form className="mt-10 grid gap-4 text-left">
-          <input className="rounded-2xl border bg-white px-5 py-4 outline-none focus:ring-2 focus:ring-black" placeholder="Name" />
-          <input className="rounded-2xl border bg-white px-5 py-4 outline-none focus:ring-2 focus:ring-black" placeholder="Email" />
-          <textarea className="min-h-36 rounded-2xl border bg-white px-5 py-4 outline-none focus:ring-2 focus:ring-black" placeholder="Tell us about your project" />
-          <button className="rounded-full bg-black py-6 text-white hover:bg-neutral-800">Send message</button>
+
+        <form style={{ marginTop: "30px", display: "grid", gap: "14px" }}>
+          <input style={{ padding: "16px", borderRadius: "14px", border: "1px solid #ccc" }} placeholder="Name" />
+          <input style={{ padding: "16px", borderRadius: "14px", border: "1px solid #ccc" }} placeholder="Email" />
+          <textarea style={{ padding: "16px", borderRadius: "14px", border: "1px solid #ccc", minHeight: "140px" }} placeholder="Tell us about your project" />
+          <button style={{ background: "black", color: "white", padding: "16px", borderRadius: "999px", border: "none", fontSize: "16px" }}>
+            Send message
+          </button>
         </form>
       </section>
 
-      <footer className="border-t px-5 py-8 text-center text-sm text-neutral-500">
+      <footer style={{ borderTop: "1px solid #ddd", padding: "26px", textAlign: "center", color: "#666" }}>
         © 2026 Andinet Construction Technology Bridge. All rights reserved.
       </footer>
     </main>
   );
 }
-
