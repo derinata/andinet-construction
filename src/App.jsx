@@ -42,52 +42,325 @@ export default function AndinetConstructionWebsite() {
         </nav>
       </header>
 
-      <section style={{ maxWidth: "1100px", margin: "0 auto", padding: "80px 20px 50px", display: "grid", gap: "35px" }}>
-        <motion.div initial={{ opacity: 0, y: 25 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} style={{ textAlign: "center" }}>
-          <p style={{ letterSpacing: "3px", color: "#666", textTransform: "uppercase" }}>Construction Technology Bridge</p>
-          <h1 style={{ fontSize: "clamp(42px, 8vw, 86px)", lineHeight: "0.95", margin: "20px 0" }}>
-            Innovating Addis Ababa
-          </h1>
-          <p style={{ maxWidth: "760px", margin: "0 auto", fontSize: "20px", lineHeight: "1.7", color: "#555" }}>
-            Connecting global construction technologies with infrastructure projects in Ethiopia and East Africa.
-          </p>
-          <p style={{ maxWidth: "760px", margin: "18px auto 0", fontSize: "18px", lineHeight: "1.7", color: "#555" }}>
-            Through partnerships with global innovators, Andinet bridges funding, technology, and on-site expertise to deliver resilient infrastructure across East Africa.
-          </p>
 
-          <div style={{ marginTop: "28px", display: "flex", justifyContent: "center", gap: "12px", flexWrap: "wrap" }}>
-            <a href="#contact" style={{ background: "black", color: "white", padding: "14px 22px", borderRadius: "999px", textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "8px" }}>
-              Start a partnership <ArrowRight size={18} />
-            </a>
-            <a href="#story" style={{ border: "1px solid black", color: "black", padding: "14px 22px", borderRadius: "999px", textDecoration: "none" }}>
-              Learn more
-            </a>
-          </div>
-        </motion.div>
+         <section
+  id="news"
+  style={{
+    maxWidth: "1100px",
+    margin: "0 auto",
+    padding: "80px 20px",
+  }}
+>
+  <div style={{ textAlign: "center", marginBottom: "40px" }}>
+    <h2 style={{ fontSize: "clamp(36px, 6vw, 70px)", margin: 0 }}>
+      Latest Partnership Announcement
+    </h2>
+  </div>
 
-        <img
-          src="https://images.unsplash.com/photo-1600240644455-3edc55c375fe?auto=format&fit=crop&w=1200&q=80"
-          alt="Modern bridge infrastructure"
-          style={{ width: "100%", maxHeight: "520px", objectFit: "cover", borderRadius: "28px", boxShadow: "0 20px 50px rgba(0,0,0,0.18)" }}
-        />
-      </section>
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+      gap: "30px",
+      alignItems: "center",
+    }}
+  >
+    <img
+      src="/images/partnership-mou.jpg"
+      alt="Partnership MOU"
+      style={{
+        width: "100%",
+        borderRadius: "20px",
+        boxShadow: "0 12px 30px rgba(0,0,0,0.1)",
+      }}
+    />
 
-      <section id="story" style={{ background: "#0ea5e9", color: "black", padding: "70px 20px" }}>
-        <div style={{ maxWidth: "1100px", margin: "0 auto", display: "grid", gap: "30px" }}>
-          <div style={{ textAlign: "center" }}>
-            <h2 style={{ fontSize: "clamp(36px, 6vw, 70px)", margin: 0 }}>Our Story</h2>
-            <p style={{ maxWidth: "850px", margin: "20px auto", fontSize: "19px", lineHeight: "1.7" }}>
-              Eng. Andinet Assemanew builds bridges between international vendors and Ethiopian projects, guiding clients from concept through commissioning with clarity, integrity, and local insight.
-            </p>
-          </div>
-          <img
-            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80"
-            alt="Bridge project landscape"
-            style={{ width: "100%", maxHeight: "480px", objectFit: "cover", borderRadius: "28px" }}
-          />
+    <div>
+      <h3 style={{ fontSize: "30px", marginBottom: "20px" }}>
+        ECEVBA Signs Strategic Partnership Agreement
+      </h3>
+
+      <p style={{ color: "#555", lineHeight: "1.8" }}>
+        On May 21, 2026, ECEVBA proudly signed its first trilateral
+        Memorandum of Understanding (MOU) with MIE Global and Prana
+        Events.
+      </p>
+
+      <p style={{ color: "#555", lineHeight: "1.8" }}>
+        This partnership was established to collaborate on the China
+        Trade Week initiative within the Electric Vehicle sector,
+        creating opportunities for international cooperation,
+        innovation, and sustainable development.
+      </p>
+
+      <p style={{ color: "#555", lineHeight: "1.8" }}>
+        We are excited about this milestone and look forward to
+        strengthening global partnerships in the electric vehicle
+        industry.
+      </p>
+    </div>
+  </div>
+</section>
+        <section
+  id="home"
+  style={{
+    borderTop: "1px solid #ddd",
+    textAlign: "center",
+    padding: "70px 20px",
+  }}
+>
+  <p
+    style={{
+      color: "#6b21a8",
+      fontWeight: "700",
+      letterSpacing: "3px",
+      textTransform: "uppercase",
+      marginBottom: "22px",
+    }}
+  >
+    Construction Technology Bridge
+  </p>
+
+  <h1
+    style={{
+      fontSize: "clamp(42px, 7vw, 76px)",
+      lineHeight: "1.05",
+      margin: 0,
+    }}
+  >
+    Innovating Addis Ababa
+  </h1>
+
+  <p
+    style={{
+      maxWidth: "850px",
+      margin: "25px auto 0",
+      fontSize: "22px",
+      color: "#444",
+      lineHeight: "1.6",
+    }}
+  >
+    Connecting global construction technologies with infrastructure projects
+    in Ethiopia and East Africa.
+  </p>
+
+  <p
+    style={{
+      maxWidth: "900px",
+      margin: "25px auto 0",
+      fontSize: "20px",
+      color: "#444",
+      lineHeight: "1.6",
+    }}
+  >
+    Through partnerships with global innovators, Andinet bridges funding,
+    technology, and on-site expertise to deliver resilient infrastructure
+    across East Africa.
+  </p>
+
+  <div
+    style={{
+      marginTop: "38px",
+      display: "flex",
+      justifyContent: "center",
+      gap: "18px",
+      flexWrap: "wrap",
+    }}
+  >
+    <a
+      href="#contact"
+      style={{
+        background: "black",
+        color: "white",
+        padding: "18px 34px",
+        borderRadius: "40px",
+        textDecoration: "none",
+        fontSize: "18px",
+      }}
+    >
+      Start a partnership →
+    </a>
+
+    <a
+      href="#story"
+      style={{
+        color: "black",
+        padding: "18px 34px",
+        borderRadius: "40px",
+        border: "1px solid black",
+        textDecoration: "none",
+        fontSize: "18px",
+      }}
+    >
+      Learn more
+    </a>
+  </div>
+
+
+</section>
+
+
+      <section
+  id="story"
+  style={{
+    background: "#f5f5f4",
+    padding: "90px 20px",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1100px",
+      margin: "0 auto",
+      textAlign: "center",
+    }}
+  >
+    <h2
+      style={{
+        fontSize: "clamp(36px, 6vw, 70px)",
+        marginBottom: "20px",
+      }}
+    >
+      Our Story
+    </h2>
+
+    <p
+      style={{
+        maxWidth: "850px",
+        margin: "0 auto 45px",
+        fontSize: "20px",
+        lineHeight: "1.8",
+        color: "#444",
+      }}
+    >
+      Eng. Andinet Assemanew builds bridges between international vendors
+      and Ethiopian projects, guiding clients from concept through
+      commissioning with clarity, integrity, and local insight.
+    </p>
+
+    <div
+      style={{
+        maxWidth: "900px",
+        margin: "0 auto",
+        borderRadius: "28px",
+        overflow: "hidden",
+        boxShadow: "0 18px 45px rgba(0,0,0,0.12)",
+      }}
+    >
+      <img
+        src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=80"
+        alt="Bridge project landscape"
+        style={{
+          width: "100%",
+          height: "360px",
+          objectFit: "cover",
+          display: "block",
+        }}
+      />
+    </div>
+  </div>
+</section>
+<section
+  id="partners"
+  style={{
+    background: "#ffffff",
+    padding: "90px 20px",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1100px",
+      margin: "0 auto",
+    }}
+  >
+    <div style={{ textAlign: "center", marginBottom: "60px" }}>
+      <h2
+        style={{
+          fontSize: "clamp(36px, 6vw, 70px)",
+          marginBottom: "20px",
+        }}
+      >
+        Leadership & Global Partners
+      </h2>
+
+      <p
+        style={{
+          maxWidth: "760px",
+          margin: "0 auto",
+          color: "#555",
+          fontSize: "19px",
+          lineHeight: "1.8",
+        }}
+      >
+        Building international bridges between innovation, infrastructure,
+        technology, and sustainable development.
+      </p>
+    </div>
+
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+        gap: "30px",
+      }}
+    >
+      <div
+        style={{
+          background: "#f5f5f4",
+          padding: "35px",
+          borderRadius: "24px",
+        }}
+      >
+        <h3 style={{ fontSize: "30px", marginBottom: "25px" }}>
+          Leadership Team
+        </h3>
+
+        <div style={{ display: "grid", gap: "18px", color: "#444" }}>
+          <p><strong>Chief Advisor:</strong> Dr. Peter Jeng</p>
+
+          <p><strong>Business Developer CEO:</strong> Eng. Tigist Gonfa</p>
+
+          <p><strong>Manufacturing & Infrastructure CEO:</strong> Mr. Endalk Demeke</p>
+
+          <p><strong>Spanish Representative:</strong> Dr. Yirgalem Yifru</p>
+
+          <p><strong>Finnish Representative:</strong> Eng. Derej Asamenew</p>
         </div>
-      </section>
+      </div>
 
+      <div
+        style={{
+          background: "#f5f5f4",
+          padding: "35px",
+          borderRadius: "24px",
+        }}
+      >
+        <h3 style={{ fontSize: "30px", marginBottom: "25px" }}>
+          Global Partners
+        </h3>
+
+        <div style={{ display: "grid", gap: "14px", color: "#444" }}>
+          <p>CIAPST - China International for Promotion of Science and Technology</p>
+
+          <p>MIE Events</p>
+
+          <p>Alsina Formwork</p>
+
+          <p>JA Solar</p>
+
+          <p>ZP Motors</p>
+
+          <p>ADTO Group</p>
+
+          <p>Kinlong</p>
+
+          <p>SFA France</p>
+
+          <p>ITC China</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
       <section id="services" style={{ maxWidth: "1100px", margin: "0 auto", padding: "80px 20px" }}>
         <div style={{ textAlign: "center", marginBottom: "40px" }}>
           <h2 style={{ fontSize: "clamp(36px, 6vw, 70px)", margin: 0 }}>Our Services</h2>
@@ -121,6 +394,11 @@ export default function AndinetConstructionWebsite() {
         </div>
       </section>
 
+
+      <footer style={{ borderTop: "1px solid #ddd", padding: "26px", textAlign: "center", color: "#666" }}>
+        © 2026 Andinet Construction Technology Bridge. All rights reserved.
+
+
       <section id="contact" style={{ maxWidth: "900px", margin: "0 auto", padding: "80px 20px", textAlign: "center" }}>
         <h2 style={{ fontSize: "clamp(36px, 6vw, 70px)", margin: 0 }}>Trusted Partner.</h2>
         <p style={{ color: "#555", fontSize: "18px", lineHeight: "1.7" }}>
@@ -137,14 +415,23 @@ export default function AndinetConstructionWebsite() {
           <input style={{ padding: "16px", borderRadius: "14px", border: "1px solid #ccc" }} placeholder="Name" />
           <input style={{ padding: "16px", borderRadius: "14px", border: "1px solid #ccc" }} placeholder="Email" />
           <textarea style={{ padding: "16px", borderRadius: "14px", border: "1px solid #ccc", minHeight: "140px" }} placeholder="Tell us about your project" />
-          <button style={{ background: "black", color: "white", padding: "16px", borderRadius: "999px", border: "none", fontSize: "16px" }}>
-            Send message
-          </button>
+          <a
+  href="mailto:andassamenew@yahoo.com"
+  style={{
+    background: "black",
+    color: "white",
+    padding: "16px",
+    borderRadius: "999px",
+    textDecoration: "none",
+    display: "block",
+    textAlign: "center",
+    fontSize: "16px"
+  }}
+>
+  Send message
+</a>
         </form>
       </section>
-
-      <footer style={{ borderTop: "1px solid #ddd", padding: "26px", textAlign: "center", color: "#666" }}>
-        © 2026 Andinet Construction Technology Bridge. All rights reserved.
       </footer>
     </main>
   );
