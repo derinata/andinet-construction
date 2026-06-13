@@ -28,7 +28,14 @@ export default function AndinetConstructionWebsite() {
     <main style={{ background: "#fafaf9", color: "#171717", fontFamily: "Arial, sans-serif" }}>
       <header style={{ position: "sticky", top: 0, zIndex: 50, background: "white", borderBottom: "1px solid #ddd" }}>
         <nav style={{ maxWidth: "1100px", margin: "0 auto", padding: "18px", display: "flex", alignItems: "center", justifyContent: "space-between", gap: "20px", flexWrap: "wrap" }}>
-          <div style={{ fontSize: "22px", letterSpacing: "2px", fontWeight: "600" }}>ANDINET</div>
+ <img
+  src="/images/andinet-logo.jpg"
+  alt="Andinet Logo"
+  style={{
+    height: "70px",
+    width: "auto"
+  }}
+/>
 
           <div style={{ display: "flex", gap: "28px", fontSize: "14px", textTransform: "uppercase" }}>
             <a href="#services">Services</a>
