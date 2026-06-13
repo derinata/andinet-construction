@@ -57,7 +57,48 @@ export default function AndinetConstructionWebsite() {
     </h2>
   </div>
 
-  <div
+<div
+  style={{
+    marginBottom: "80px",
+    background: "#ffffff",
+    padding: "30px",
+    borderRadius: "20px",
+    boxShadow: "0 10px 30px rgba(0,0,0,0.08)"
+  }}
+>
+  <h2
+    style={{
+      fontSize: "clamp(28px, 4vw, 50px)",
+      marginBottom: "20px"
+    }}
+  >
+    Strategic Partnership with Kinlong
+  </h2>
+
+  <img
+    src="/images/kinlong-meeting.jpg"
+    alt="Kinlong Meeting"
+    style={{
+      width: "50%",
+      display: "block",
+      marginLeft: "0 auto 20px auto",
+      borderRadius: "20px",
+      marginBottom: "20px"
+    }}
+  />
+
+  <p
+    style={{
+      fontSize: "18px",
+      lineHeight: "1.8"
+    }}
+  >
+    Productive and encouraging trilateral business discussion held May 26, 2026 with representatives of Kinlong led by Mrs. Vanna and Winner Construction Materials Supplier PLC.
+    The meeting focused on strategic cooperation, construction hardware solutions, and future market opportunities in Ethiopia’s growing infrastructure and real estate sector.
+    Looking forward to building strong international partnerships and sustainable business collaboration.
+  </p>
+</div>
+             <div
     style={{
       display: "grid",
       gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
