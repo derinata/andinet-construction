@@ -79,9 +79,9 @@ export default function AndinetConstructionWebsite() {
     src="/images/kinlong-meeting.jpg"
     alt="Kinlong Meeting"
     style={{
-      width: "50%",
+      width: "70%",
       display: "block",
-      marginLeft: "0 auto 20px auto",
+      margin: "0 auto 20px auto",
       borderRadius: "20px",
       marginBottom: "20px"
     }}
